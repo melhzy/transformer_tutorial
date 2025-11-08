@@ -21,25 +21,25 @@ The Transformer architecture revolutionized natural language processing by repla
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                 Transformer Model                    │
+│                 Transformer Model                   │
 ├─────────────────────┬───────────────────────────────┤
 │      ENCODER        │         DECODER               │
 │                     │                               │
-│  ┌──────────────┐   │   ┌──────────────┐           │
-│  │ Multi-Head   │   │   │ Masked       │           │
-│  │ Self-        │   │   │ Multi-Head   │           │
-│  │ Attention    │   │   │ Attention    │           │
-│  └──────────────┘   │   └──────────────┘           │
+│  ┌──────────────┐   │   ┌──────────────┐            │
+│  │ Multi-Head   │   │   │ Masked       │            │
+│  │ Self-        │   │   │ Multi-Head   │            │
+│  │ Attention    │   │   │ Attention    │            │
+│  └──────────────┘   │   └──────────────┘            │
 │         │           │          │                    │
-│  ┌──────────────┐   │   ┌──────────────┐           │
+│  ┌──────────────┐   │   ┌──────────────┐            │
 │  │ Feed-Forward │   │   │ Cross-        │           │
-│  │ Network      │   │   │ Attention    │           │
-│  └──────────────┘   │   └──────────────┘           │
+│  │ Network      │   │   │ Attention    │            │
+│  └──────────────┘   │   └──────────────┘            │
 │         │           │          │                    │
-│    (× N layers)     │   ┌──────────────┐           │
-│                     │   │ Feed-Forward │           │
-│                     │   │ Network      │           │
-│                     │   └──────────────┘           │
+│    (× N layers)     │   ┌──────────────┐            │
+│                     │   │ Feed-Forward │            │
+│                     │   │ Network      │            │
+│                     │   └──────────────┘            │
 │                     │          │                    │
 │                     │     (× N layers)              │
 └─────────────────────┴───────────────────────────────┘
