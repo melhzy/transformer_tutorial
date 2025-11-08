@@ -1,0 +1,14 @@
+# Core dependencies for Transformer Tutorial
+torch>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Optional: for visualization and experimentation
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# For text processing examples
+tokenizers>=0.13.0
+
+# Testing (optional)
+pytest>=7.4.0
